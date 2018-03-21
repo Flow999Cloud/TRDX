@@ -1,0 +1,201 @@
+<!-- BEGIN: Subheader -->
+<div class="m-subheader" appunwraptag="">
+	<div class="d-flex align-items-center">
+		<div class="mr-auto">
+			<h3 class="m-subheader__title">
+				Assistant - All Trades Channel
+			</h3>
+		</div>
+	</div>
+</div>
+<!-- END: Subheader -->
+
+<div class="m-content">
+	<!--Begin::Section-->
+	<div class="m-portlet">
+		<div class="m-portlet__body  m-portlet__body--no-padding">
+			<div class="row m-row--no-padding m-row--col-separator-xl">
+				<div class="col-xl-4">
+					<!--begin:: Widgets/Stats2-1 -->
+					<div class="m-widget1">
+						<div class="m-widget1__item">
+							<div class="row m-row--no-padding align-items-center">
+								<div class="col">
+									<h3 class="m-widget1__title">
+										Earnings Today
+									</h3>
+									<span class="m-widget1__desc">
+										Your daily earnings based on all activated exchanges
+									</span>
+								</div>
+								<div class="col m--align-right">
+									<span class="m-widget1__number m--font-brand">
+										+$2,350
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="m-widget1__item">
+							<div class="row m-row--no-padding align-items-center">
+								<div class="col">
+									<h3 class="m-widget1__title">
+										Earnings last 7 days
+									</h3>
+									<span class="m-widget1__desc">
+										Your weekly earnings based on all activated exchanges
+									</span>
+								</div>
+								<div class="col m--align-right">
+									<span class="m-widget1__number m--font-danger">
+										+$18,320
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="m-widget1__item">
+							<div class="row m-row--no-padding align-items-center">
+								<div class="col">
+									<h3 class="m-widget1__title">
+										Percentage Profit
+									</h3>
+									<span class="m-widget1__desc">
+										Percentage Profit based on all activated exchanges
+									</span>
+								</div>
+								<div class="col m--align-right">
+									<span class="m-widget1__number m--font-success">
+										12.28%
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end:: Widgets/Stats2-1 -->
+				</div>
+				<div class="col-xl-4">
+					<!--begin:: Widgets/Daily Sales-->
+					<div class="m-widget14">
+						<div class="m-widget14__header m--margin-bottom-30">
+							<h3 class="m-widget14__title">
+								Last 14 days earnings
+							</h3>
+							<span class="m-widget14__desc">
+								Last 14 days earnings based on all activated exchanges
+							</span>
+						</div>
+						<div class="m-widget14__chart" style="height:120px;">
+							<canvas  id="m_chart_last_2w_earnings"></canvas>
+						</div>
+					</div>
+					<!--end:: Widgets/Daily Sales-->
+				</div>
+				<div class="col-xl-4">
+					<!--begin:: Widgets/Profit Share-->
+					<div class="m-widget14">
+						<div class="m-widget14__header">
+							<h3 class="m-widget14__title">
+								Exchange earnings
+							</h3>
+							<span class="m-widget14__desc">
+								Overview about exchange trades and earnings
+							</span>
+						</div>
+						<div class="row  align-items-center">
+							<div class="col">
+								<div id="m_chart_exchange_earnings" class="m-widget14__chart" style="height: 160px">
+									<div class="m-widget14__stat">
+										36
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="m-widget14__legends">
+									<div class="m-widget14__legend">
+										<span class="m-widget14__legend-bullet m--bg-accent"></span>
+										<span class="m-widget14__legend-text">
+											12% Bittrex
+										</span>
+									</div>
+									<div class="m-widget14__legend">
+										<span class="m-widget14__legend-bullet m--bg-brand"></span>
+										<span class="m-widget14__legend-text">
+											24% Binance
+										</span>
+									</div>
+									<div class="m-widget14__legend">
+										<span class="m-widget14__legend-bullet m--bg-success"></span>
+										<span class="m-widget14__legend-text">
+											33% HITBTC
+										</span>
+									</div>
+									<div class="m-widget14__legend">
+										<span class="m-widget14__legend-bullet m--bg-warning"></span>
+										<span class="m-widget14__legend-text">
+											31% Poloniex
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end:: Widgets/Profit Share-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End::Section-->
+
+	<div class="m-portlet m-portlet--mobile">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<h3 class="m-portlet__head-text">
+						Bot Trades
+					</h3>
+				</div>
+			</div>
+			<div class="m--pull-right">
+				<div class="m-input-icon m-input-icon--left m--margin-top-15">
+					<input type="text" class="form-control m-input" placeholder="Search..." id="bot-trades-search">
+					<span class="m-input-icon__icon m-input-icon__icon--left">
+						<span>
+							<i class="la la-search"></i>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<!--begin: Datatable -->
+			<div class="m_bot_trades_data" id="bot_trades_data"></div>
+			<!--end: Datatable -->
+		</div>
+	</div>
+
+	<div class="m-portlet m-portlet--mobile">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<h3 class="m-portlet__head-text">
+						Exchange Overview
+					</h3>
+				</div>
+			</div>
+			<div class="m--pull-right">
+				<div class="m-input-icon m-input-icon--left m--margin-top-15">
+					<input type="text" class="form-control m-input" placeholder="Search..." id="exchange-data-search">
+					<span class="m-input-icon__icon m-input-icon__icon--left">
+						<span>
+							<i class="la la-search"></i>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<!--begin: Datatable -->
+			<div class="m_exchange_overview_data" id="exchange_overview_data"></div>
+			<!--end: Datatable -->
+		</div>
+	</div>
+</div>

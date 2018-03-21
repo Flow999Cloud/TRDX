@@ -1,0 +1,18 @@
+.risk-copy {
+	.risk-inline-component {
+		display: inline-block;
+		margin: 0 5px;
+
+		&.risk-percent {
+			width: 100px;
+		}
+
+		&.risk-amount {
+			width: 140px;
+		}
+
+		&.risk-unit {
+			width: 100px;
+		}
+	}
+}

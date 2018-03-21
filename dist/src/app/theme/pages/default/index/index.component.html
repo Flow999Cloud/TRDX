@@ -1,0 +1,119 @@
+<!-- BEGIN: Subheader -->
+<div class="m-subheader" appunwraptag="">
+	<div class="d-flex align-items-center">
+		<div class="mr-auto">
+			<h3 class="m-subheader__title">
+				Dashboard
+			</h3>
+		</div>
+		<div>
+			<span class="m-subheader__daterange" id="m_dashboard_daterangepicker">
+				<span class="m-subheader__daterange-label">
+					<span class="m-subheader__daterange-title"></span>
+					<span class="m-subheader__daterange-date m--font-brand"></span>
+				</span>
+				<a href="#" class="btn btn-sm btn-brand m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--pill">
+					<i class="la la-angle-down"></i>
+				</a>
+			</span>
+		</div>
+	</div>
+</div>
+<!-- END: Subheader -->
+<div class="m-content">	
+
+	<div class="m-portlet">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<span class="m-portlet__head-icon m--hide">
+						<i class="la la-gear"></i>
+					</span>
+					<h3 class="m-portlet__head-text mr-auto">
+						News
+					</h3>
+				</div>
+			</div>
+			<div class="m--pull-right">
+				<strong><span class="mc-current-date m--font-brand"></span></strong>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<div class="alert alert-success alert-dismissible fade show m-alert m-alert--air" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				</button>
+			  	<strong>Good news!</strong> You've got a better conversion rate.					  	
+			</div>
+
+			<div class="alert alert-danger alert-dismissible fade show m-alert m-alert--air" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				</button>
+			  	<strong>Update!</strong> The trading bot need to update. Please update with the new version.
+			</div>
+
+			<div class="m-alert m-alert--icon m-alert--air m-alert--square alert alert-dismissible m--margin-bottom-0" role="alert">
+				<div class="m-alert__icon m-alert__icon--top">
+					<i class="flaticon-exclamation m--font-accent"></i>
+				</div>
+				<div class="m-alert__text">
+					<p>
+						Lorem ipsum dolor sit amet, <span class="m-badge m-badge--danger m-badge--wide m-badge--rounded">consetetur</span> sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <span class="m-badge m-badge--accent m-badge--wide m-badge--rounded">At vero eos et accusam et justo</span> duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+					</p>
+					<p>
+						For more info please chech the official
+						<a class="m-link" href="http://www.amcharts.com/demos/" >
+							documentation
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="m-portlet m-portlet--mobile">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<h3 class="m-portlet__head-text">
+						Open Trades
+					</h3>
+				</div>
+			</div>
+			<div class="m--pull-right">
+				<div class="m-input-icon m-input-icon--left m--margin-top-15">
+					<input type="text" class="form-control m-input" placeholder="Search..." id="generalSearch">
+					<span class="m-input-icon__icon m-input-icon__icon--left">
+						<span>
+							<i class="la la-search"></i>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<!--begin: Datatable -->
+			<div class="m_datatable_local" id="local_data"></div>
+			<!--end: Datatable -->
+		</div>
+	</div>
+
+	<!--begin::Portlet-->
+	<div class="m-portlet m-portlet--tab">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<span class="m-portlet__head-icon m--hide">
+						<i class="la la-gear"></i>
+					</span>
+					<h3 class="m-portlet__head-text">
+						Trading Signals
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<div id="m_amcharts_trading_signal" style="height: 500px;"></div>
+		</div>
+	</div>
+	<!--end::Portlet-->
+</div>

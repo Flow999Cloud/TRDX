@@ -1,0 +1,149 @@
+<!-- BEGIN: Subheader -->
+<div class="m-subheader" appunwraptag="">
+	<div class="d-flex align-items-center">
+		<div class="mr-auto">
+			<h3 class="m-subheader__title">
+				Signal - Settings Channel
+			</h3>
+		</div>
+	</div>
+</div>
+<!-- END: Subheader -->
+
+<div class="m-content signal-setting">
+<!--begin::Portlet-->
+	<div class="m-portlet">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<h3 class="m-portlet__head-text">
+						Signal Settings
+					</h3>
+				</div>
+			</div>
+		</div>
+		<!--begin::Form-->
+		<form class="m-form m-form--fit m-form--label-align-right">
+			<div class="m-portlet__body">
+				<div class="form-group m-form__group row">
+					<label class="col-form-label col-lg-3 col-sm-12">
+						Choose Exchange : 
+					</label>
+					<div class="col-xl-4 col-lg-6 col-md-9 col-sm-12">
+						<select class="form-control m-select12" id="m_select2_choose_exchange" name="Choose Exchange" multiple="multiple">
+							<option value="Binance">
+								Binance
+							</option>
+							<option value="Bittrex">
+								Bittrex
+							</option>
+							<option value="Hitbtc">
+								HITBTC
+							</option>
+							<option value="Poloniex">
+								POLONIEX
+							</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group m-form__group row">
+					<label class="col-form-label col-lg-3 col-sm-12">
+						Trading Charts Signal Time : 
+					</label>
+					<div class="col-xl-4 col-lg-6 col-md-9 col-sm-12">
+						<select class="form-control m-select12" id="m_select2_signal_time" name="param" multiple="multiple">
+							<option value="3m">
+								3 Minutes
+							</option>
+							<option value="5m">
+								5 Minutes
+							</option>
+							<option value="15m">
+								15 Minutes
+							</option>
+							<option value="30m">
+								30 Minutes
+							</option>
+							<option value="3h">
+								240 Minutes
+							</option>
+							<option value="1d">
+								1 Day
+							</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group m-form__group row">
+					<label class="col-form-label col-lg-3 col-sm-12">
+						Trading Signals From :
+					</label>
+					<div class="col-xl-4 col-lg-6 col-md-9 col-sm-12">
+						<select class="form-control m-select2" id="m_select2_signal_date" name="param" multiple="multiple">
+							<option value="Mon" selected>
+								Monday
+							</option>
+							<option value="Tue">
+								Tuesday
+							</option>
+							<option value="Wed">
+								Wednesday
+							</option>
+							<option value="Thu">
+								Thursday
+							</option>
+							<option value="Fri" selected>
+								Friday
+							</option>
+							<option value="Sat">
+								Saturday
+							</option>
+							<option value="Sun">
+								Sunday
+							</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group m-form__group row">
+					<label class="col-form-label col-lg-3 col-sm-12">
+						Hours : 
+					</label>
+
+					<div class="col-xl-4 col-lg-6 col-md-9 col-sm-12">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12 m--margin-bottom-10">
+								<input type='text' class="form-control" id="m_timepicker_start" readonly placeholder="Select time">
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 m--margin-bottom-10">
+								<input type='text' class="form-control" id="m_timepicker_end" readonly placeholder="Select time">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space"></div>
+				<div class="form-group m-form__group row">
+					<label class="col-form-label col-lg-3 col-sm-12">
+						Subscription ID
+					</label>
+					<div class="col-xl-4 col-lg-6 col-md-9 col-sm-12 subscription-id">
+						<input type="text" class="form-control m-input m-input--solid" value="123" disabled="" placeholder="Disabled">
+					</div>
+				</div>
+			</div>
+			<div class="m-portlet__foot m-portlet__foot--fit">
+				<div class="m-form__actions m-form__actions">
+					<div class="row">
+						<div class="col-lg-9 ml-lg-auto">
+							<button type="reset" class="btn btn-brand">
+								Save
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<!--end::Form-->
+	</div>
+	<!--end::Portlet-->
+</div>

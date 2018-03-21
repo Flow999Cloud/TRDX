@@ -1,0 +1,12 @@
+.videowrapper {
+	width: 100%;
+	margin: 0 auto;
+
+	@include desktop {
+		max-width: 854px;
+	}
+
+	iframe {
+		width: 100%;
+	}
+}

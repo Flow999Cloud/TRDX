@@ -1,0 +1,62 @@
+.ico-overview {
+	.m-form.mc--ico-form {
+		.m-form__group {
+			@include desktop {
+				padding-top: 5px;
+			    padding-bottom: 5px;
+			}
+
+			label {
+				font-weight: 500;
+				color: #6f727d;
+				text-align: left;
+			}
+		}
+	}
+
+	.star-wrapper {
+		.rate-star {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.rate-score {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;
+		}
+
+		.m-portlet__nav-link {
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left: 50px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.m_portlet_ico.m-portlet--collapse {
+		.m-portlet__nav-link {
+			.la-angle-down:before {
+				content: "\f113";
+			}
+		}
+	}
+
+	.ico-thumb-wrapper {
+		text-align: right;
+
+		.ico-thumb {
+			display: inline-block;
+			width: 150px;
+			height: 150px;
+			background-image: url("#{$image-path}/pages/placeholder150.jpg");
+			background-size: cover;
+			background-position: center;
+			border-radius: 3px;
+			margin-top: 10px;
+		}
+	}
+}

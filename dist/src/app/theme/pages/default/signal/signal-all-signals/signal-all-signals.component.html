@@ -1,0 +1,61 @@
+<!-- BEGIN: Subheader -->
+<div class="m-subheader" appunwraptag="">
+	<div class="d-flex align-items-center">
+		<div class="mr-auto">
+			<h3 class="m-subheader__title">
+				Signal - All Signals Channel
+			</h3>
+		</div>
+	</div>
+</div>
+<!-- END: Subheader -->
+
+<div class="m-content">
+
+	<div class="m-portlet m-portlet--mobile">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<h3 class="m-portlet__head-text">
+						Open Trades
+					</h3>
+				</div>
+			</div>
+			<div class="m--pull-right">
+				<div class="m-input-icon m-input-icon--left m--margin-top-15">
+					<input type="text" class="form-control m-input" placeholder="Search..." id="generalSearch">
+					<span class="m-input-icon__icon m-input-icon__icon--left">
+						<span>
+							<i class="la la-search"></i>
+						</span>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<!--begin: Datatable -->
+			<div class="m_datatable_trading_data" id="trading_data"></div>
+			<!--end: Datatable -->
+		</div>
+	</div>
+
+	<!--begin::Portlet-->
+	<div class="m-portlet m-portlet--tab">
+		<div class="m-portlet__head">
+			<div class="m-portlet__head-caption">
+				<div class="m-portlet__head-title">
+					<span class="m-portlet__head-icon m--hide">
+						<i class="la la-gear"></i>
+					</span>
+					<h3 class="m-portlet__head-text">
+						Trading Signals
+					</h3>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<div id="m_amcharts_trading_signal" style="height: 500px;"></div>
+		</div>
+	</div>
+	<!--end::Portlet-->	
+</div>
